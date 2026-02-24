@@ -1,0 +1,69 @@
+{
+  "agent_name": "Production Agent",
+  "agent_id": "699da7ef4d9b8b973a73e422",
+  "description": "Orchestrates video rendering pipeline. Takes scripts with brand templates and voice configs, generates voiceover instructions, manages render jobs, logs status and asset URLs.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "render_jobs": [
+      {
+        "job_id": "string",
+        "script_id": "string",
+        "brand": "string",
+        "status": "string",
+        "voice_config": {
+          "voice_id": "string",
+          "tone": "string",
+          "speed": "string"
+        },
+        "render_specs": {
+          "resolution": "string",
+          "duration": "string",
+          "subtitle_style": "string",
+          "has_outro": "boolean"
+        },
+        "asset_url": "string",
+        "fallback_pack": "string",
+        "error_message": "string"
+      }
+    ],
+    "batch_summary": {
+      "total_jobs": "number",
+      "completed": "number",
+      "failed": "number",
+      "queued": "number"
+    }
+  },
+  "example_response": {
+    "render_jobs": [
+      {
+        "job_id": "sample string",
+        "script_id": "sample string",
+        "brand": "sample string",
+        "status": "sample string",
+        "voice_config": {
+          "voice_id": "sample string",
+          "tone": "sample string",
+          "speed": "sample string"
+        },
+        "render_specs": {
+          "resolution": "sample string",
+          "duration": "sample string",
+          "subtitle_style": "sample string",
+          "has_outro": true
+        },
+        "asset_url": "sample string",
+        "fallback_pack": "sample string",
+        "error_message": "sample string"
+      }
+    ],
+    "batch_summary": {
+      "total_jobs": 0,
+      "completed": 0,
+      "failed": 0,
+      "queued": 0
+    }
+  },
+  "schema_file": "response_schemas/production_agent_response.json"
+}

@@ -1,0 +1,64 @@
+{
+  "agent_name": "Distribution Agent",
+  "agent_id": "699da7ef1581246eff69d3e1",
+  "description": "Schedules and distributes rendered videos across platforms per brand cadence. Pushes to scheduler APIs or generates upload packs. Ensures brand isolation.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "schedule": [
+      {
+        "post_id": "string",
+        "brand": "string",
+        "platform": "string",
+        "scheduled_time": "string",
+        "caption": "string",
+        "hashtags": "string",
+        "video_reference": "string",
+        "status": "string"
+      }
+    ],
+    "distribution_summary": {
+      "total_posts": "number",
+      "by_brand": {
+        "newborns": "number",
+        "toddlers": "number",
+        "teenagers": "number"
+      },
+      "by_platform": {
+        "tiktok": "number",
+        "instagram": "number",
+        "youtube": "number",
+        "facebook": "number"
+      }
+    }
+  },
+  "example_response": {
+    "schedule": [
+      {
+        "post_id": "sample string",
+        "brand": "sample string",
+        "platform": "sample string",
+        "scheduled_time": "sample string",
+        "caption": "sample string",
+        "hashtags": "sample string",
+        "video_reference": "sample string",
+        "status": "sample string"
+      }
+    ],
+    "distribution_summary": {
+      "total_posts": 0,
+      "by_brand": {
+        "newborns": 0,
+        "toddlers": 0,
+        "teenagers": 0
+      },
+      "by_platform": {
+        "tiktok": 0,
+        "instagram": 0,
+        "youtube": 0,
+        "facebook": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "agent_name": "Hook Lab Agent",
+  "agent_id": "699da7ee1581246eff69d3df",
+  "description": "Generates 50 high-performing hooks per brand per week using inspiration briefs and past performance data. Applies weighted scoring and compliance risk flags.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "hooks_by_brand": {
+      "newborns": [
+        {
+          "hook_text": "string",
+          "pillar": "string",
+          "format": "string",
+          "cta_type": "string",
+          "predicted_intent": "string",
+          "compliance_risk": "string",
+          "source_trend": "string"
+        }
+      ],
+      "toddlers": [
+        {
+          "hook_text": "string",
+          "pillar": "string",
+          "format": "string",
+          "cta_type": "string",
+          "predicted_intent": "string",
+          "compliance_risk": "string",
+          "source_trend": "string"
+        }
+      ],
+      "teenagers": [
+        {
+          "hook_text": "string",
+          "pillar": "string",
+          "format": "string",
+          "cta_type": "string",
+          "predicted_intent": "string",
+          "compliance_risk": "string",
+          "source_trend": "string"
+        }
+      ]
+    },
+    "generation_stats": {
+      "total_hooks": "number",
+      "high_risk_count": "number",
+      "medium_risk_count": "number",
+      "low_risk_count": "number"
+    }
+  },
+  "example_response": {
+    "hooks_by_brand": {
+      "newborns": [
+        {
+          "hook_text": "sample string",
+          "pillar": "sample string",
+          "format": "sample string",
+          "cta_type": "sample string",
+          "predicted_intent": "sample string",
+          "compliance_risk": "sample string",
+          "source_trend": "sample string"
+        }
+      ],
+      "toddlers": [
+        {
+          "hook_text": "sample string",
+          "pillar": "sample string",
+          "format": "sample string",
+          "cta_type": "sample string",
+          "predicted_intent": "sample string",
+          "compliance_risk": "sample string",
+          "source_trend": "sample string"
+        }
+      ],
+      "teenagers": [
+        {
+          "hook_text": "sample string",
+          "pillar": "sample string",
+          "format": "sample string",
+          "cta_type": "sample string",
+          "predicted_intent": "sample string",
+          "compliance_risk": "sample string",
+          "source_trend": "sample string"
+        }
+      ]
+    },
+    "generation_stats": {
+      "total_hooks": 0,
+      "high_risk_count": 0,
+      "medium_risk_count": 0,
+      "low_risk_count": 0
+    }
+  }
+}

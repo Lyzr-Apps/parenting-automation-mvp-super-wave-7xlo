@@ -1,0 +1,14 @@
+{
+  "agent_ids": {
+    "trend_scout_agent": "699da78a1ff1ae52f0fc4836",
+    "hook_lab_agent": "699da7ee1581246eff69d3df",
+    "script_engine_agent": "699da7efc9d1ec5e71789904",
+    "production_agent": "699da7ef4d9b8b973a73e422",
+    "distribution_agent": "699da7ef1581246eff69d3e1",
+    "analytics_agent": "699da7f0c9d1ec5e71789906",
+    "funnel_optimizer_agent": "699da7f07c54a9ee105c172e"
+  },
+  "rag_ids": {},
+  "schedule_ids": {},
+  "schedules": {}
+}

@@ -1,0 +1,84 @@
+{
+  "agent_name": "Funnel Optimizer Agent",
+  "agent_id": "699da7f07c54a9ee105c172e",
+  "description": "Analyzes quiz funnel performance, identifies weak points, proposes A/B tests and copy variants. Generates 2 test plans per brand per week with expected impact estimates.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "funnel_analysis": {
+      "newborns": {
+        "quiz_ctr": "number",
+        "completion_rate": "number",
+        "optin_rate": "number",
+        "conversion_rate": "number",
+        "weakest_point": "string"
+      },
+      "toddlers": {
+        "quiz_ctr": "number",
+        "completion_rate": "number",
+        "optin_rate": "number",
+        "conversion_rate": "number",
+        "weakest_point": "string"
+      },
+      "teenagers": {
+        "quiz_ctr": "number",
+        "completion_rate": "number",
+        "optin_rate": "number",
+        "conversion_rate": "number",
+        "weakest_point": "string"
+      }
+    },
+    "ab_tests": [
+      {
+        "test_id": "string",
+        "brand": "string",
+        "funnel_stage": "string",
+        "control_description": "string",
+        "variant_description": "string",
+        "expected_impact": "string",
+        "sample_size": "number",
+        "duration_days": "number"
+      }
+    ],
+    "optimization_summary": "string"
+  },
+  "example_response": {
+    "funnel_analysis": {
+      "newborns": {
+        "quiz_ctr": 0,
+        "completion_rate": 0,
+        "optin_rate": 0,
+        "conversion_rate": 0,
+        "weakest_point": "sample string"
+      },
+      "toddlers": {
+        "quiz_ctr": 0,
+        "completion_rate": 0,
+        "optin_rate": 0,
+        "conversion_rate": 0,
+        "weakest_point": "sample string"
+      },
+      "teenagers": {
+        "quiz_ctr": 0,
+        "completion_rate": 0,
+        "optin_rate": 0,
+        "conversion_rate": 0,
+        "weakest_point": "sample string"
+      }
+    },
+    "ab_tests": [
+      {
+        "test_id": "sample string",
+        "brand": "sample string",
+        "funnel_stage": "sample string",
+        "control_description": "sample string",
+        "variant_description": "sample string",
+        "expected_impact": "sample string",
+        "sample_size": 0,
+        "duration_days": 0
+      }
+    ],
+    "optimization_summary": "sample string"
+  }
+}

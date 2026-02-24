@@ -1,0 +1,66 @@
+{
+  "agent_name": "Script Engine Agent",
+  "agent_id": "699da7efc9d1ec5e71789904",
+  "description": "Transforms approved hooks into template-ready short-form video scripts (20-35s) with platform-specific captions. Enforces reading level, tone, and compliance guardrails.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "scripts": [
+      {
+        "script_id": "string",
+        "hook_text": "string",
+        "brand": "string",
+        "full_script": "string",
+        "hook_section": "string",
+        "core_insight": "string",
+        "say_this_instead": "string",
+        "cta_text": "string",
+        "cta_type": "string",
+        "duration_estimate": "string",
+        "compliance_status": "string",
+        "captions": {
+          "instagram": "string",
+          "tiktok": "string",
+          "youtube_shorts": "string",
+          "facebook": "string"
+        }
+      }
+    ],
+    "total_scripts": "number",
+    "brand_breakdown": {
+      "newborns": "number",
+      "toddlers": "number",
+      "teenagers": "number"
+    }
+  },
+  "example_response": {
+    "scripts": [
+      {
+        "script_id": "sample string",
+        "hook_text": "sample string",
+        "brand": "sample string",
+        "full_script": "sample string",
+        "hook_section": "sample string",
+        "core_insight": "sample string",
+        "say_this_instead": "sample string",
+        "cta_text": "sample string",
+        "cta_type": "sample string",
+        "duration_estimate": "sample string",
+        "compliance_status": "sample string",
+        "captions": {
+          "instagram": "sample string",
+          "tiktok": "sample string",
+          "youtube_shorts": "sample string",
+          "facebook": "sample string"
+        }
+      }
+    ],
+    "total_scripts": 0,
+    "brand_breakdown": {
+      "newborns": 0,
+      "toddlers": 0,
+      "teenagers": 0
+    }
+  }
+}

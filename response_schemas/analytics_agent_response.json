@@ -1,0 +1,94 @@
+{
+  "agent_name": "Analytics Agent",
+  "agent_id": "699da7f0c9d1ec5e71789906",
+  "description": "Ingests platform metrics, funnel data, and revenue data. Calculates per-post and per-brand KPIs. Identifies winners/losers. Generates weekly reports with recommendations.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "kpis": {
+      "saves_per_1k": "number",
+      "shares_per_1k": "number",
+      "follows_per_1k": "number",
+      "completion_rate": "number",
+      "quiz_ctr": "number",
+      "rpm": "number"
+    },
+    "winners": [
+      {
+        "post_id": "string",
+        "hook": "string",
+        "brand": "string",
+        "weighted_score": "number",
+        "top_metric": "string"
+      }
+    ],
+    "losers": [
+      {
+        "post_id": "string",
+        "hook": "string",
+        "brand": "string",
+        "weighted_score": "number",
+        "issue": "string"
+      }
+    ],
+    "recommendations": {
+      "double_down": [
+        "string"
+      ],
+      "adjust": [
+        "string"
+      ],
+      "emerging": [
+        "string"
+      ]
+    },
+    "weekly_summary": "string",
+    "next_week_briefs": [
+      "string"
+    ]
+  },
+  "example_response": {
+    "kpis": {
+      "saves_per_1k": 0,
+      "shares_per_1k": 0,
+      "follows_per_1k": 0,
+      "completion_rate": 0,
+      "quiz_ctr": 0,
+      "rpm": 0
+    },
+    "winners": [
+      {
+        "post_id": "sample string",
+        "hook": "sample string",
+        "brand": "sample string",
+        "weighted_score": 0,
+        "top_metric": "sample string"
+      }
+    ],
+    "losers": [
+      {
+        "post_id": "sample string",
+        "hook": "sample string",
+        "brand": "sample string",
+        "weighted_score": 0,
+        "issue": "sample string"
+      }
+    ],
+    "recommendations": {
+      "double_down": [
+        "sample string"
+      ],
+      "adjust": [
+        "sample string"
+      ],
+      "emerging": [
+        "sample string"
+      ]
+    },
+    "weekly_summary": "sample string",
+    "next_week_briefs": [
+      "sample string"
+    ]
+  }
+}

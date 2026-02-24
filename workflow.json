@@ -1,0 +1,126 @@
+{
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "User Command", "nodeCategory": "input"},
+      {"id": "trend_scout_agent", "type": "Agent", "label": "Trend Scout Agent", "nodeCategory": "agent"},
+      {"id": "hook_lab_agent", "type": "Agent", "label": "Hook Lab Agent", "nodeCategory": "agent"},
+      {"id": "script_engine_agent", "type": "Agent", "label": "Script Engine Agent", "nodeCategory": "agent"},
+      {"id": "production_agent", "type": "Agent", "label": "Production Agent", "nodeCategory": "agent"},
+      {"id": "distribution_agent", "type": "Agent", "label": "Distribution Agent", "nodeCategory": "agent"},
+      {"id": "analytics_agent", "type": "Agent", "label": "Analytics Agent", "nodeCategory": "agent"},
+      {"id": "funnel_optimizer_agent", "type": "Agent", "label": "Funnel Optimizer Agent", "nodeCategory": "agent"},
+      {"id": "output_node", "type": "Output", "label": "Pipeline Output", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "trend_scout_agent"},
+      {"source": "trend_scout_agent", "target": "hook_lab_agent"},
+      {"source": "hook_lab_agent", "target": "script_engine_agent"},
+      {"source": "script_engine_agent", "target": "production_agent"},
+      {"source": "production_agent", "target": "distribution_agent"},
+      {"source": "distribution_agent", "target": "analytics_agent"},
+      {"source": "distribution_agent", "target": "funnel_optimizer_agent"},
+      {"source": "analytics_agent", "target": "output_node"},
+      {"source": "funnel_optimizer_agent", "target": "output_node"}
+    ]
+  },
+  "agents": [
+    {
+      "node_id": "trend_scout_agent",
+      "agent_id": "699da78a1ff1ae52f0fc4836",
+      "name": "Trend Scout Agent",
+      "provider": "Perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.3,
+      "top_p": 1,
+      "agent_type": "json",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false,
+      "response_schema_file": "response_schemas/trend_scout_agent_response.json"
+    },
+    {
+      "node_id": "hook_lab_agent",
+      "agent_id": "699da7ee1581246eff69d3df",
+      "name": "Hook Lab Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "agent_type": "json",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false,
+      "response_schema_file": "response_schemas/hook_lab_agent_response.json"
+    },
+    {
+      "node_id": "script_engine_agent",
+      "agent_id": "699da7efc9d1ec5e71789904",
+      "name": "Script Engine Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "agent_type": "json",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false,
+      "response_schema_file": "response_schemas/script_engine_agent_response.json"
+    },
+    {
+      "node_id": "production_agent",
+      "agent_id": "699da7ef4d9b8b973a73e422",
+      "name": "Production Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.2,
+      "top_p": 1,
+      "agent_type": "json",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false,
+      "response_schema_file": "response_schemas/production_agent_response.json"
+    },
+    {
+      "node_id": "distribution_agent",
+      "agent_id": "699da7ef1581246eff69d3e1",
+      "name": "Distribution Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.2,
+      "top_p": 1,
+      "agent_type": "json",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false,
+      "response_schema_file": "response_schemas/distribution_agent_response.json"
+    },
+    {
+      "node_id": "analytics_agent",
+      "agent_id": "699da7f0c9d1ec5e71789906",
+      "name": "Analytics Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.4,
+      "top_p": 1,
+      "agent_type": "json",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false,
+      "response_schema_file": "response_schemas/analytics_agent_response.json"
+    },
+    {
+      "node_id": "funnel_optimizer_agent",
+      "agent_id": "699da7f07c54a9ee105c172e",
+      "name": "Funnel Optimizer Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "agent_type": "json",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false,
+      "response_schema_file": "response_schemas/funnel_optimizer_agent_response.json"
+    }
+  ]
+}

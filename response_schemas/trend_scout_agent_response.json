@@ -1,0 +1,42 @@
+{
+  "agent_name": "Trend Scout Agent",
+  "agent_id": "699da78a1ff1ae52f0fc4836",
+  "description": "Researches top-performing parenting content across competitor accounts in Newborns, Toddlers, and Teenagers niches. Identifies viral hook structures, content angles, emotional triggers, and format patterns.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "inspiration_briefs": [
+      {
+        "trend_title": "string",
+        "source_platform": "string",
+        "hook_pattern": "string",
+        "emotional_trigger": "string",
+        "content_angle": "string",
+        "brand_fit_score": "number",
+        "target_niche": "string",
+        "compliance_notes": "string",
+        "suggested_adaptation": "string"
+      }
+    ],
+    "summary": "string",
+    "research_date": "string"
+  },
+  "example_response": {
+    "inspiration_briefs": [
+      {
+        "trend_title": "sample string",
+        "source_platform": "sample string",
+        "hook_pattern": "sample string",
+        "emotional_trigger": "sample string",
+        "content_angle": "sample string",
+        "brand_fit_score": 0,
+        "target_niche": "sample string",
+        "compliance_notes": "sample string",
+        "suggested_adaptation": "sample string"
+      }
+    ],
+    "summary": "sample string",
+    "research_date": "sample string"
+  }
+}
